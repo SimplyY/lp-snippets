@@ -1,0 +1,57 @@
+'.source.gfm':
+    'md code':
+        'prefix': 'code-md'
+        'body': """
+                ```
+                ${0}
+                ```
+                """
+    'html code':
+        'prefix': 'html'
+        'body': """
+                ```html
+                ${0}
+                ```
+                """
+    'css code':
+        'prefix': 'css'
+        'body': """
+                ```css
+                ${0}
+                ```
+                """
+    'js code':
+        'prefix': 'js'
+        'body': """
+                ```js
+                ${0}
+                ```
+                """
+    'cpp code':
+        'prefix': 'cpp'
+        'body': """
+                ```cpp
+                ${0}
+                ```
+                """
+    'python code':
+        'prefix': 'python'
+        'body': """
+                ```python
+                ${0}
+                ```
+                """
+    'ruby code':
+        'prefix': 'ruby'
+        'body': """
+                ```ruby
+                ${0}
+                ```
+                """
+    'java code':
+        'prefix': 'java'
+        'body': """
+                ```java
+                ${0}
+                ```
+                """

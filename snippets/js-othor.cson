@@ -1,0 +1,26 @@
+".source.js, .source.ts, .source.tsx":
+    "on event handler":
+        "prefix": "on"
+        "body": "on('${2:event}', (${3:arguments}) => {${0}})"
+    "setInterval":
+        "prefix": "setInterval"
+        "body": """
+                setInterval(() => {
+                \t${0:// body...}
+                }, ${1:delay})
+                """
+    "setTimeout":
+        "prefix": "setTimeout"
+        "body": """
+                setTimeout(() => {
+                \t${0:// body...}
+                }, ${1:delay})
+                """
+    "log perfamance":
+        "prefix": "logperfamance"
+        "body": """
+                let time1 = Date.now()
+                ${1://do something}
+                let time2 = Date.now()
+                console.log(time2 - time1)
+                """

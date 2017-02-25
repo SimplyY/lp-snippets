@@ -1,0 +1,32 @@
+".source.js, .source.jsx, .source.ts":
+    "for(let i)":
+        "prefix": "for"
+        "body": """
+                for (let ${2:i} = 0; ${2:i} < ${1:array}.length; ${2:i}++) {
+                \t${0:// body...}
+                }
+                """
+    "forEach mutiline":
+        "prefix": "forEacha"
+        "body": """
+                forEach(${1:item} => {
+                \t${0:// body...}
+                })
+                """
+    "for in":
+        "prefix": "forin"
+        "body": """
+                for (let ${1:prop} in ${2:obj}) {
+                \tif (${2:obj}.hasOwnProperty(${1:prop})) {
+                \t\t${0:// body...}
+                \t}
+                }
+                """
+    "for of":
+        "prefix": "forof"
+        "body": """
+                for (let ${1:prop} of ${2:obj}) {
+                \t\t${0:// body...}
+                \t}
+                }
+                """

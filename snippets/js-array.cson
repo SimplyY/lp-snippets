@@ -1,0 +1,56 @@
+".source.js, .source.ts, .source.jsx":
+    "array.map arrow":
+        "prefix": "filtera"
+        "body": """
+                filter(item => ${0:item})
+                """
+    "array.filter muti arrow f":
+        "prefix": "filterma"
+        "body": """
+                filter(${2:item} => {
+                \t${0:// body...maybe empty}
+                \treturn
+                })
+                """
+    "array.map arrow":
+        "prefix": "mapa"
+        "body": """
+                map(item => ${0:item})
+                """
+    "array.map muti arrow f":
+        "prefix": "mapma"
+        "body": """
+                map(${2:item} => {
+                \t${0:// body...}
+                \treturn
+                })
+                """
+    "array.reduce arrow f":
+        "prefix": "reducea"
+        "body": """
+                reduce((${2:accumulator}, ${3:currentItem}, index) => {
+                \t${0:// body...maybe empty}
+                \treturn
+                })
+                """
+    "array.forEach muti arrow f":
+        "prefix": "foreachma"
+        "body": """
+                forEach(${2:item} => {
+                \t${0:// body...}
+                })
+                """
+    "sequence from 0 to n":
+        "prefix": "sequence"
+        "body": """
+                [...Array(${1:length}).keys()]${0}
+                """
+    "array.find arrow f":
+        "prefix": "finda"
+        "body": "find(item => ${0:item})"
+    "array.find muti arrow f":
+        "prefix": "findma"
+        "body": "find((${1:item}) => {
+                \t${0:body}
+                \treturn
+                })"

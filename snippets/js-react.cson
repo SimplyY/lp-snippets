@@ -1,0 +1,56 @@
+".source.js, .source.jsx, .source.ts":
+    'react class':
+        'prefix': 'react class'
+        'body': """
+                import React, { Component } from 'react';
+
+                class ${1:className} extends Component {
+                  constructor() {
+                    super();
+                  }
+
+                  render() {
+                    return (
+                      <div>
+                      </div>
+                    );
+                  }
+                }
+
+                export default ${1:className};
+                """
+    'className react':
+        'prefix': 'className'
+        'body': 'className="$0"'
+    'setState react':
+        'prefix': 'setState'
+        'body': """setState({
+            ${1}
+          });"""
+    'preventDefault':
+        'prefix': 'preventDefault'
+        'body': 'preventDefault();'
+    'stopPropagation':
+        'prefix': 'stopPropagation'
+        'body': 'stopPropagation();'
+    'onClick react':
+        'prefix': 'onClick'
+        'body':'onClick={$0}'
+    'onChange react':
+        'prefix': 'onChange'
+        'body':'onChange={$0}'
+    'componentWillMount':
+        'preifx': 'componentWillMount'
+        'body': """componentWillMount() {
+                \t$0
+                }"""
+    'componentDidMount':
+        'prefix': 'componentDidMount'
+        'body': """componentDidMount() {
+                \t$0
+                }"""
+    'componentDidUpdate':
+        'prefix': 'componentDidUpdate'
+        'body': """componentDidUpdate() {
+                \t$0
+                }"""

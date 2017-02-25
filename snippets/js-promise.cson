@@ -1,0 +1,21 @@
+".source.js, .source.jsx, .source.ts":
+    'Promise.all':
+        'prefix': 'all'
+        'body': 'Promise.all(${0})'
+    'Promise.then':
+        'prefix': 'then'
+        'body': 'then(${1:data} => {${0}})'
+    "new Promise":
+        prefix: "newp",
+        body: """
+              new Promise((resolve, reject) => {
+              \t${0}
+              })
+              """
+    "Promise.catch":
+        prefix: "catch"
+        body: """
+              catch(${2:error} => {
+              \t${0}
+              });
+              """
