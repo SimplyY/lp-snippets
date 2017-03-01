@@ -47,3 +47,6 @@
     'fetch':
         'prefix': 'fetch'
         'body': 'fetch'
+    'length':
+        'prefix': 'length'
+        'body': 'length'

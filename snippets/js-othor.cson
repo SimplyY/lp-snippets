@@ -7,20 +7,20 @@
         "body": """
                 setInterval(() => {
                 \t${0:// body...}
-                }, ${1:delay})
+                }, ${1:delay});
                 """
     "setTimeout":
         "prefix": "setTimeout"
         "body": """
                 setTimeout(() => {
                 \t${0:// body...}
-                }, ${1:delay})
+                }, ${1:delay});
                 """
     "log perfamance":
         "prefix": "logperfamance"
         "body": """
-                let time1 = Date.now()
+                let time1 = Date.now();
                 ${1://do something}
-                let time2 = Date.now()
-                console.log(time2 - time1)
+                let time2 = Date.now();
+                console.log(time2 - time1);
                 """

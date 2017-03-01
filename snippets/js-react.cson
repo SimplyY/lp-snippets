@@ -25,7 +25,7 @@
     'setState react':
         'prefix': 'setState'
         'body': """setState({
-            ${1}
+          \t${1}
           });"""
     'preventDefault':
         'prefix': 'preventDefault'
