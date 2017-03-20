@@ -1,6 +1,6 @@
 ".source.js, .source.jsx, .source.ts":
     "JSON.stringify":
-        "prefix": "js"
+        "prefix": "jsons"
         "body": "JSON.stringify(${0:obj})"
     "JSON.parse":
         "prefix": "jsonp"

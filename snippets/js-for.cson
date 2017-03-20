@@ -6,13 +6,6 @@
                 \t${0:// body...}
                 }
                 """
-    "forEach mutiline":
-        "prefix": "forEacha"
-        "body": """
-                forEach(${1:item} => {
-                \t${0:// body...}
-                })
-                """
     "for in":
         "prefix": "forin"
         "body": """

@@ -64,6 +64,5 @@
               \t\t${0:code}
               \t\tbreak
               \tdefault:
-              \t\t
               }
               """
