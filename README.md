@@ -1,12 +1,12 @@
-# simplyy-snippets atom package
-[中文文档](https://github.com/SimplyY/simplyy-snippets/blob/master/zh-cn-README.md)
+# lp-snippetss atom package
+[中文文档](https://github.com/SimplyY/lp-snippets/blob/master/zh-cn-README.md)
 
 avoid different atom snippets package's repeat snippets and unify all of their snippets style。
 
 a lot of js snippets collections, with es6 grammer,no semicolon style, learned from other package like javascript-snippets,turbo-javascript etc(copy and inprove, so avoid their repeat snippets and unify all of their snippets style)
 
 ## install
-apm install simplyy-snippets
+apm install lp-snippets
 
 ## demo
 ![demo](http://7xkpdt.com1.z0.glb.clouddn.com/blog-2-29-test.gif)
