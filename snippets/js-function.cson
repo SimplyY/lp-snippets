@@ -42,6 +42,20 @@
                 \t${0:// body...}
                 }
                 """
+    "async function":
+        "prefix": "async"
+        "body": """
+                async function ${1:methodName} (${2:arguments}) {
+                \t${0:// body...}
+                }
+                """
+    "async arrow function":
+        "prefix": "asynca"
+        "body": """
+                async() => {
+                \t${0:// body...}
+                }
+                """
     "add prototype method":
         "prefix": "prototype"
         "body": """
