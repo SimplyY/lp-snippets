@@ -31,21 +31,21 @@
     "function with name":
         "prefix": "fn"
         "body": """
-                function ${1:methodName} (${2:arguments}) {
+                function ${1:methodName}(${2:arguments}) {
                 \t${0:// body...}
                 }
                 """
     "generator function":
         "prefix": "gfn"
         "body": """
-                function * ${1:methodName} (${2:arguments}) {
+                function * ${1:methodName}(${2:arguments}) {
                 \t${0:// body...}
                 }
                 """
     "async function":
         "prefix": "async"
         "body": """
-                async function ${1:methodName} (${2:arguments}) {
+                async function ${1:methodName}(${2:arguments}) {
                 \t${0:// body...}
                 }
                 """
