@@ -2,7 +2,7 @@
     "anonymous function":
         "prefix": "f"
         "body": """
-                function(${1:arguments}) {
+                function(${1:args}) {
                 \t${0:// body...}
                 }
                 """
@@ -14,12 +14,12 @@
     "function call":
         "prefix": "call"
         "body": """
-                call(${2:this}, ${3:arguments})
+                call(${2:this}, ${3:args})
                 """
     "function bind":
         "prefix": "bind"
         "body": """
-                bind(${2:this}, ${3:arguments})
+                bind(${2:this}, ${3:args})
                 """
     "immediately-invoked function expression":
         "prefix": "iife"
@@ -31,21 +31,21 @@
     "function with name":
         "prefix": "fn"
         "body": """
-                function ${1:methodName}(${2:arguments}) {
+                function ${1:methodName}(${2:args}) {
                 \t${0:// body...}
                 }
                 """
     "generator function":
         "prefix": "gfn"
         "body": """
-                function * ${1:methodName}(${2:arguments}) {
+                function * ${1:methodName}(${2:args}) {
                 \t${0:// body...}
                 }
                 """
     "async function":
         "prefix": "async"
         "body": """
-                async function ${1:methodName}(${2:arguments}) {
+                async function ${1:methodName}(${2:args}) {
                 \t${0:// body...}
                 }
                 """
@@ -59,7 +59,7 @@
     "add prototype method":
         "prefix": "prototype"
         "body": """
-                prototype.${2:methodName} = function(${3:arguments}) {
+                prototype.${2:methodName} = function(${3:args}) {
                 \t${0:// body...}
                 }
                 """
