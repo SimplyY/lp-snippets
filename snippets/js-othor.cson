@@ -24,3 +24,10 @@
                 let time2 = Date.now();
                 console.log(time2 - time1);
                 """
+    "test async it":
+        "prefix": "ita"
+        "body": """
+it('${1:task}', async() => {
+  ${0:// body...}
+});
+                """
