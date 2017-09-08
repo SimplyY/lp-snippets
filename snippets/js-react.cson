@@ -5,9 +5,6 @@
                 import React, { Component } from 'react';
 
                 class ${1:className} extends Component {
-                  constructor() {
-                    super();
-                  }
 
                   render() {
                     return (
