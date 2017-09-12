@@ -16,6 +16,25 @@
 
                 export default ${1:className};
                 """
+    'rax class':
+        'prefix': 'rax class'
+        'body': """
+                import { createElement, Component } from 'rax';
+                import View from 'rax-view';
+
+                class ${1:className} extends Component {
+
+                  render() {
+                    return (
+                      <View>
+                      </View>
+                    );
+                  }
+                }
+
+                export default ${1:className};
+                """
+
     'className react':
         'prefix': 'className'
         'body': 'className="$0"'
