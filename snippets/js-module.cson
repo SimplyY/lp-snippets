@@ -11,6 +11,14 @@
     "export default":
         "prefix": "exportd"
         "body": "export default"
+    "export const":
+        "prefix": "exportd"
+        "body": "export const ${}"        
+    "export function":
+        "prefix": "exportfun"
+        "body": "export function ${1:methodName}(${2:args}) {
+        \t${0:// body...}
+        }"
     "require":
         "prefix": "require"
         "body": """
